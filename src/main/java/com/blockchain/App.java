@@ -71,10 +71,6 @@ public class App {
         transaction.add(transactionFirst);
 
         for (int i = 1; i < 6; i++) {
-            // Transaction transactionNext = transaction.get(transaction.size() - 1);
-            // transaction.add(transactionNext);
-            // // print the transaction details
-            // System.out.println(transactionNext.toString());
             transaction.add(new Transaction(Math.random() * 100, transaction.get(transaction.size() - 1).getHash()));
             System.out.println(transaction.get(i).toString());
         }
